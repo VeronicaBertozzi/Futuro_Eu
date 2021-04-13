@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Futuro Eu</title>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="background">
+    <form method="GET" action="/envia-e-mail">
+        <div class="dadosE-mail">
+            <fieldset id="dadosEnviar"><title>Envie uma mensagem para você no futuro!</title>
+                <div class="coloqueE-mail">
+                    <label for="coloqueE-mail"></label></br><input type="email" name="e-mail" id="coloqueE-mail" size="30" placeholder="Coloque o seu e-mail"
+                    required>
+                </div>
+                <div class="coloqueAssunto">
+                    <label for="coloqueAssunto"></label></br><input type="text" name="assunto" id="coloqueAssunto"
+                    size="30"
+                    placeholder="Coloque o assunto" required>
+                </div>
+                <div class="escolhaUmaData">
+                    <label for="escolhaUmaData"></label></br><input type="date" name="data" id="escolhaUmaData" required>
+                </div>
+                <div class="conteudoE-mail">
+                    <label for="conteudoE-mail"></label></br><input type="text" name="conteudo" id="conteudoE-mail" placeholder="Escreva para o seu eu do futuro!" required>
+                </div>       
+            </fieldset>
+            <button type="submit" class="botaoEnviar">Enviar</button>
+        </div>        
+    </form>
+</body>
+</html>
